@@ -4,8 +4,10 @@ gcloud compute disks snapshot sagar-test-disk --snapshot-names sagar-disk-snapsh
 
 echo "delete instance"
 gcloud compute instances delete i-ao-sagar-test
+
 echo "#delete the disk"
 gcloud compute disks delete sagar-test-disk
+
 echo "#create disk from snapshot"
 gcloud compute disks create sagar-test-disk --source-snapshot sagar-disk-snapshot
 
