@@ -1,5 +1,6 @@
+#to delete the vm instance
 gcloud compute instances delete i-ao-sagar-test
-#-y
 
+#to delete the disk
 gcloud compute disks delete sagar-test-disk
-#-y
+
